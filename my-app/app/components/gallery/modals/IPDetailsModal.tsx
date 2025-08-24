@@ -41,7 +41,7 @@ const LicenseOfferCard = ({ offer, onBuy, isBuying }: { offer: LicenseOffer, onB
                 disabled={isBuying}
                 className="px-4 py-2 text-sm font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition-colors disabled:opacity-50 whitespace-nowrap w-full sm:w-auto"
             >
-                {isBuying ? "Processing..." : `Buy for ${formatWei(offer.priceWei)} ETH`}
+                {isBuying ? "Processing..." : `Buy for ${formatWei(offer.priceWei)} SEI`}
             </button>
         </div>
     );
