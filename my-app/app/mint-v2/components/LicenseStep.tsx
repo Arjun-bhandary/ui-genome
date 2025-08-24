@@ -26,7 +26,7 @@ export function LicenseStep({ suggestions, selectedIds, onToggle, onSubmit, onBa
                                 {isSelected && <CheckCircleIcon className="absolute top-4 right-4 w-6 h-6 text-indigo-400" />}
                                 <h3 className="font-bold text-white pr-8">{s.license_name}</h3>
                                 <p className="text-xs text-cyan-400 uppercase mt-1">{s.license_type}</p>
-                                <p className="text-sm text-gray-300 mt-3">Mint Fee: <span className="font-semibold">{s.royalties.mint_fee} ETH</span></p>
+                                <p className="text-sm text-gray-300 mt-3">Mint Fee: <span className="font-semibold">{s.royalties.mint_fee} SEI</span></p>
                                 <ul className="mt-2 space-y-1 list-disc list-inside text-xs text-gray-400">
                                     {s.restrictions.map((r, i) => <li key={i}>{r}</li>)}
                                 </ul>
