@@ -130,7 +130,7 @@ export function useMintWizard() {
         let derivedFormState: Partial<FormState> = {};
         if (type === 'research_paper') {
             derivedFormState.title = data.title || '';
-            derivedFormState.description = data.abstract || data.ai_summary?.abstract || '';
+            derivedFormState.description = data.abstract || data.ai_summary?.abstract || data.high_level_overview || '';
             derivedFormState.keywords = Array.isArray(data.keywords) ? data.keywords.join(', ') : data.keywords || '';
             const rawAuthors = Array.isArray(data.authors) ? data.authors.map((a: any) => ({ name: a.name || a })) : [];
             derivedFormState.authors = rawAuthors.length > 0 ? rawAuthors : [{ name: '' }];
